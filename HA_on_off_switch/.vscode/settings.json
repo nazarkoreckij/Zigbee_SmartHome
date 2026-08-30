@@ -1,5 +1,12 @@
 {
-    "idf.currentSetup": "D:\\esp\\v5.5.5\\esp-idf",
-    "idf.portWin": "COM3",
-    "idf.flashType": "UART"
+  "idf.currentSetup": "D:\\esp\\v6.0.2\\esp-idf",
+  "idf.portWin": "COM3",
+  "idf.flashType": "UART",
+  "clangd.path": "D:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=c:\\Users\\ASUS\\Desktop\\Zigbee_SmartHome\\HA_on_off_switch\\build"
+  ],
+  "idf.customExtraVars": {}
 }

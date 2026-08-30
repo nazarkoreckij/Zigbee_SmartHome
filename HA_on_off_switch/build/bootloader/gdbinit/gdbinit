@@ -1,0 +1,2 @@
+source D:/Zigbee_SmartHome/HA_on_off_switch/build/bootloader/gdbinit/symbols
+source D:/Zigbee_SmartHome/HA_on_off_switch/build/bootloader/gdbinit/connect

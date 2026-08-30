@@ -23,7 +23,7 @@
     "board/esp32-wrover-kit-3.3v.cfg"
   ],
   "idf.portWin": "COM6",
-  "idf.currentSetup": "D:\\esp\\v5.5.5\\esp-idf",
+  "idf.currentSetup": "D:\\esp\\v6.0.2\\esp-idf",
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32c6"
   },

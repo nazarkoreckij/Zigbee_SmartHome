@@ -22,13 +22,13 @@ dependencies:
   examples_utils:
     dependencies: []
     source:
-      path: D:\esp\v5.5.5\esp-idf\examples\zigbee\zb_common_components\examples_utils
+      path: ../../esp/v6.0.2/esp-idf/examples/zigbee/zb_common_components/examples_utils
       type: local
     version: '*'
   idf:
     source:
       type: idf
-    version: 5.5.5
+    version: 6.0.2
 direct_dependencies:
 - espressif/esp-zboss-lib
 - espressif/esp-zigbee-lib
@@ -36,4 +36,4 @@ direct_dependencies:
 - idf
 manifest_hash: 38eb32e2be3bf4f2f2c09e19faf9839c08bb3d3d2a1a18b57f8157ba44d91370
 target: esp32c6
-version: 2.0.0
+version: 3.0.0

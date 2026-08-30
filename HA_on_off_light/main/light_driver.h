@@ -38,6 +38,7 @@
 #pragma once
 
 #include <stdbool.h>
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -57,6 +58,22 @@ extern "C" {
 * @param  power  The light power to be set
 */
 void light_driver_set_power(bool power);
+
+/**
+* @brief Set light color (RGB).
+*
+* @param  red    Red color value (0-255)
+* @param  green  Green color value (0-255)
+* @param  blue   Blue color value (0-255)
+*/
+void light_driver_set_color_rgb(uint8_t red, uint8_t green, uint8_t blue);
+
+/**
+* @brief Set light brightness level.
+*
+* @param  level  Brightness level (0-255)
+*/
+void light_driver_set_level(uint8_t level);
 
 /**
 * @brief color light driver init, be invoked where you want to use color light
