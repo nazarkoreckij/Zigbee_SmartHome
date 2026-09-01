@@ -364,6 +364,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_rmt/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_driver_bitscrambler/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_driver_rmt/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__onewire_bus/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__ds18b20/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__esp-zboss-lib/cmake_install.cmake")
 endif()
 

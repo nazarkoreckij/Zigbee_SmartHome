@@ -122,6 +122,13 @@ D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_phy/libesp_phy.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_ieee802154/libesp_hal_ieee802154.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/ieee802154/libieee802154.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_ieee802154/libesp_hal_ieee802154.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_rmt/libesp_hal_rmt.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_rmt/libesp_hal_rmt.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__onewire_bus/libespressif__onewire_bus.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__ds18b20/libespressif__ds18b20.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__onewire_bus/libespressif__onewire_bus.a
 D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zboss-lib/lib/esp32c6/libzboss_stack.ed.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_i2c/libesp_hal_i2c.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_twai/libesp_hal_twai.a
@@ -137,4 +144,5 @@ D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/ieee802154/libieee802154.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/examples_utils/libexamples_utils.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__esp-zigbee-lib/libespressif__esp-zigbee-lib.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/main/libmain.a
+D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__ds18b20/libespressif__ds18b20.a
 D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/examples_utils/libexamples_utils.a

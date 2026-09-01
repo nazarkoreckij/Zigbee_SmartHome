@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "light_switch",
-    "project_version":    "56b0bd5-dirty",
+    "project_version":    "1bd1f39-dirty",
     "project_path":       "D:/Zigbee_SmartHome/HA_on_off_switch",
     "idf_path":           "D:/esp/v6.0.2/esp-idf",
     "build_dir":          "D:/Zigbee_SmartHome/HA_on_off_switch/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "riscv32-esp-elf-",
     "c_compiler":         "D:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "D:/esp/v6.0.2/esp-idf/components/console/Kconfig;D:/esp/v6.0.2/esp-idf/components/driver/Kconfig;D:/esp/v6.0.2/esp-idf/components/efuse/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_coex/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_common/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_dma/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_spi/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_uart/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_event/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_hw_support/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_libc/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_mm/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_netif/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_partition/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_phy/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_pm/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_psram/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_ringbuf/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_rom/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_security/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_stdio/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_system/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_timer/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_wifi/Kconfig;D:/esp/v6.0.2/esp-idf/components/freertos/Kconfig;D:/esp/v6.0.2/esp-idf/components/hal/Kconfig;D:/esp/v6.0.2/esp-idf/components/heap/Kconfig;D:/esp/v6.0.2/esp-idf/components/ieee802154/Kconfig;D:/esp/v6.0.2/esp-idf/components/log/Kconfig;D:/esp/v6.0.2/esp-idf/components/lwip/Kconfig;D:/esp/v6.0.2/esp-idf/components/mbedtls/Kconfig;D:/esp/v6.0.2/esp-idf/components/nvs_flash/Kconfig;D:/esp/v6.0.2/esp-idf/components/nvs_sec_provider/Kconfig;D:/esp/v6.0.2/esp-idf/components/openthread/Kconfig;D:/esp/v6.0.2/esp-idf/components/pthread/Kconfig;D:/esp/v6.0.2/esp-idf/components/soc/Kconfig;D:/esp/v6.0.2/esp-idf/components/spi_flash/Kconfig;D:/esp/v6.0.2/esp-idf/components/vfs/Kconfig;D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zigbee-lib/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "D:/esp/v6.0.2/esp-idf/components/app_update/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/bootloader/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/esp_app_format/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/esp_rom/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/esptool_py/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "D:/esp/v6.0.2/esp-idf/components/console/Kconfig;D:/esp/v6.0.2/esp-idf/components/driver/Kconfig;D:/esp/v6.0.2/esp-idf/components/efuse/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_coex/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_common/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_bitscrambler/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_dma/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_spi/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_uart/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_event/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_hw_support/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_libc/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_mm/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_netif/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_partition/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_phy/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_pm/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_psram/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_ringbuf/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_rom/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_security/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_stdio/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_system/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_timer/Kconfig;D:/esp/v6.0.2/esp-idf/components/esp_wifi/Kconfig;D:/esp/v6.0.2/esp-idf/components/freertos/Kconfig;D:/esp/v6.0.2/esp-idf/components/hal/Kconfig;D:/esp/v6.0.2/esp-idf/components/heap/Kconfig;D:/esp/v6.0.2/esp-idf/components/ieee802154/Kconfig;D:/esp/v6.0.2/esp-idf/components/log/Kconfig;D:/esp/v6.0.2/esp-idf/components/lwip/Kconfig;D:/esp/v6.0.2/esp-idf/components/mbedtls/Kconfig;D:/esp/v6.0.2/esp-idf/components/nvs_flash/Kconfig;D:/esp/v6.0.2/esp-idf/components/nvs_sec_provider/Kconfig;D:/esp/v6.0.2/esp-idf/components/openthread/Kconfig;D:/esp/v6.0.2/esp-idf/components/pthread/Kconfig;D:/esp/v6.0.2/esp-idf/components/soc/Kconfig;D:/esp/v6.0.2/esp-idf/components/spi_flash/Kconfig;D:/esp/v6.0.2/esp-idf/components/vfs/Kconfig;D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zigbee-lib/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "D:/esp/v6.0.2/esp-idf/components/app_update/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/bootloader/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/esp_app_format/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/esp_rom/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/esptool_py/Kconfig.projbuild;D:/esp/v6.0.2/esp-idf/components/partition_table/Kconfig.projbuild;D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__ds18b20/Kconfig.projbuild"
     },
-    "common_component_reqs": [ "cxx", "esp_libc", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "esp_stdio", "riscv" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "console", "cxx", "driver", "efuse", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_dma", "esp_driver_gpio", "esp_driver_spi", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_hal_ana_conv", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2c", "esp_hal_i2s", "esp_hal_ieee802154", "esp_hal_mspi", "esp_hal_pmu", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_twai", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hw_support", "esp_libc", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_usb_cdc_rom_console", "esp_wifi", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "esptool_py", "examples_utils", "freertos", "hal", "heap", "ieee802154", "log", "lwip", "main", "mbedtls", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "pthread", "riscv", "soc", "spi_flash", "vfs", "wpa_supplicant", "" ],
-    "build_component_paths" : [ "D:/esp/v6.0.2/esp-idf/components/app_update", "D:/esp/v6.0.2/esp-idf/components/bootloader", "D:/esp/v6.0.2/esp-idf/components/bootloader_support", "D:/esp/v6.0.2/esp-idf/components/console", "D:/esp/v6.0.2/esp-idf/components/cxx", "D:/esp/v6.0.2/esp-idf/components/driver", "D:/esp/v6.0.2/esp-idf/components/efuse", "D:/esp/v6.0.2/esp-idf/components/esp_app_format", "D:/esp/v6.0.2/esp-idf/components/esp_blockdev", "D:/esp/v6.0.2/esp-idf/components/esp_bootloader_format", "D:/esp/v6.0.2/esp-idf/components/esp_coex", "D:/esp/v6.0.2/esp-idf/components/esp_common", "D:/esp/v6.0.2/esp-idf/components/esp_driver_dma", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio", "D:/esp/v6.0.2/esp-idf/components/esp_driver_spi", "D:/esp/v6.0.2/esp-idf/components/esp_driver_uart", "D:/esp/v6.0.2/esp-idf/components/esp_driver_usb_serial_jtag", "D:/esp/v6.0.2/esp-idf/components/esp_event", "D:/esp/v6.0.2/esp-idf/components/esp_hal_ana_conv", "D:/esp/v6.0.2/esp-idf/components/esp_hal_clock", "D:/esp/v6.0.2/esp-idf/components/esp_hal_dma", "D:/esp/v6.0.2/esp-idf/components/esp_hal_gpio", "D:/esp/v6.0.2/esp-idf/components/esp_hal_gpspi", "D:/esp/v6.0.2/esp-idf/components/esp_hal_i2c", "D:/esp/v6.0.2/esp-idf/components/esp_hal_i2s", "D:/esp/v6.0.2/esp-idf/components/esp_hal_ieee802154", "D:/esp/v6.0.2/esp-idf/components/esp_hal_mspi", "D:/esp/v6.0.2/esp-idf/components/esp_hal_pmu", "D:/esp/v6.0.2/esp-idf/components/esp_hal_rtc_timer", "D:/esp/v6.0.2/esp-idf/components/esp_hal_security", "D:/esp/v6.0.2/esp-idf/components/esp_hal_timg", "D:/esp/v6.0.2/esp-idf/components/esp_hal_touch_sens", "D:/esp/v6.0.2/esp-idf/components/esp_hal_twai", "D:/esp/v6.0.2/esp-idf/components/esp_hal_uart", "D:/esp/v6.0.2/esp-idf/components/esp_hal_usb", "D:/esp/v6.0.2/esp-idf/components/esp_hal_wdt", "D:/esp/v6.0.2/esp-idf/components/esp_hw_support", "D:/esp/v6.0.2/esp-idf/components/esp_libc", "D:/esp/v6.0.2/esp-idf/components/esp_mm", "D:/esp/v6.0.2/esp-idf/components/esp_netif", "D:/esp/v6.0.2/esp-idf/components/esp_netif_stack", "D:/esp/v6.0.2/esp-idf/components/esp_partition", "D:/esp/v6.0.2/esp-idf/components/esp_phy", "D:/esp/v6.0.2/esp-idf/components/esp_pm", "D:/esp/v6.0.2/esp-idf/components/esp_psram", "D:/esp/v6.0.2/esp-idf/components/esp_ringbuf", "D:/esp/v6.0.2/esp-idf/components/esp_rom", "D:/esp/v6.0.2/esp-idf/components/esp_security", "D:/esp/v6.0.2/esp-idf/components/esp_stdio", "D:/esp/v6.0.2/esp-idf/components/esp_system", "D:/esp/v6.0.2/esp-idf/components/esp_timer", "D:/esp/v6.0.2/esp-idf/components/esp_usb_cdc_rom_console", "D:/esp/v6.0.2/esp-idf/components/esp_wifi", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zboss-lib", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zigbee-lib", "D:/esp/v6.0.2/esp-idf/components/esptool_py", "D:/esp/v6.0.2/esp-idf/examples/zigbee/zb_common_components/examples_utils", "D:/esp/v6.0.2/esp-idf/components/freertos", "D:/esp/v6.0.2/esp-idf/components/hal", "D:/esp/v6.0.2/esp-idf/components/heap", "D:/esp/v6.0.2/esp-idf/components/ieee802154", "D:/esp/v6.0.2/esp-idf/components/log", "D:/esp/v6.0.2/esp-idf/components/lwip", "D:/Zigbee_SmartHome/HA_on_off_switch/main", "D:/esp/v6.0.2/esp-idf/components/mbedtls", "D:/esp/v6.0.2/esp-idf/components/nvs_flash", "D:/esp/v6.0.2/esp-idf/components/nvs_sec_provider", "D:/esp/v6.0.2/esp-idf/components/openthread", "D:/esp/v6.0.2/esp-idf/components/partition_table", "D:/esp/v6.0.2/esp-idf/components/pthread", "D:/esp/v6.0.2/esp-idf/components/riscv", "D:/esp/v6.0.2/esp-idf/components/soc", "D:/esp/v6.0.2/esp-idf/components/spi_flash", "D:/esp/v6.0.2/esp-idf/components/vfs", "D:/esp/v6.0.2/esp-idf/components/wpa_supplicant", "" ],
+    "common_component_reqs": [ "cxx", "esp_libc", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "esp_stdio", "riscv", "riscv" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "console", "cxx", "driver", "efuse", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_bitscrambler", "esp_driver_dma", "esp_driver_gpio", "esp_driver_rmt", "esp_driver_spi", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_hal_ana_conv", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2c", "esp_hal_i2s", "esp_hal_ieee802154", "esp_hal_mspi", "esp_hal_pmu", "esp_hal_rmt", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_twai", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hw_support", "esp_libc", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_usb_cdc_rom_console", "esp_wifi", "espressif__ds18b20", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "espressif__onewire_bus", "esptool_py", "examples_utils", "freertos", "hal", "heap", "ieee802154", "log", "lwip", "main", "mbedtls", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "pthread", "riscv", "soc", "spi_flash", "vfs", "wpa_supplicant", "" ],
+    "build_component_paths" : [ "D:/esp/v6.0.2/esp-idf/components/app_update", "D:/esp/v6.0.2/esp-idf/components/bootloader", "D:/esp/v6.0.2/esp-idf/components/bootloader_support", "D:/esp/v6.0.2/esp-idf/components/console", "D:/esp/v6.0.2/esp-idf/components/cxx", "D:/esp/v6.0.2/esp-idf/components/driver", "D:/esp/v6.0.2/esp-idf/components/efuse", "D:/esp/v6.0.2/esp-idf/components/esp_app_format", "D:/esp/v6.0.2/esp-idf/components/esp_blockdev", "D:/esp/v6.0.2/esp-idf/components/esp_bootloader_format", "D:/esp/v6.0.2/esp-idf/components/esp_coex", "D:/esp/v6.0.2/esp-idf/components/esp_common", "D:/esp/v6.0.2/esp-idf/components/esp_driver_bitscrambler", "D:/esp/v6.0.2/esp-idf/components/esp_driver_dma", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt", "D:/esp/v6.0.2/esp-idf/components/esp_driver_spi", "D:/esp/v6.0.2/esp-idf/components/esp_driver_uart", "D:/esp/v6.0.2/esp-idf/components/esp_driver_usb_serial_jtag", "D:/esp/v6.0.2/esp-idf/components/esp_event", "D:/esp/v6.0.2/esp-idf/components/esp_hal_ana_conv", "D:/esp/v6.0.2/esp-idf/components/esp_hal_clock", "D:/esp/v6.0.2/esp-idf/components/esp_hal_dma", "D:/esp/v6.0.2/esp-idf/components/esp_hal_gpio", "D:/esp/v6.0.2/esp-idf/components/esp_hal_gpspi", "D:/esp/v6.0.2/esp-idf/components/esp_hal_i2c", "D:/esp/v6.0.2/esp-idf/components/esp_hal_i2s", "D:/esp/v6.0.2/esp-idf/components/esp_hal_ieee802154", "D:/esp/v6.0.2/esp-idf/components/esp_hal_mspi", "D:/esp/v6.0.2/esp-idf/components/esp_hal_pmu", "D:/esp/v6.0.2/esp-idf/components/esp_hal_rmt", "D:/esp/v6.0.2/esp-idf/components/esp_hal_rtc_timer", "D:/esp/v6.0.2/esp-idf/components/esp_hal_security", "D:/esp/v6.0.2/esp-idf/components/esp_hal_timg", "D:/esp/v6.0.2/esp-idf/components/esp_hal_touch_sens", "D:/esp/v6.0.2/esp-idf/components/esp_hal_twai", "D:/esp/v6.0.2/esp-idf/components/esp_hal_uart", "D:/esp/v6.0.2/esp-idf/components/esp_hal_usb", "D:/esp/v6.0.2/esp-idf/components/esp_hal_wdt", "D:/esp/v6.0.2/esp-idf/components/esp_hw_support", "D:/esp/v6.0.2/esp-idf/components/esp_libc", "D:/esp/v6.0.2/esp-idf/components/esp_mm", "D:/esp/v6.0.2/esp-idf/components/esp_netif", "D:/esp/v6.0.2/esp-idf/components/esp_netif_stack", "D:/esp/v6.0.2/esp-idf/components/esp_partition", "D:/esp/v6.0.2/esp-idf/components/esp_phy", "D:/esp/v6.0.2/esp-idf/components/esp_pm", "D:/esp/v6.0.2/esp-idf/components/esp_psram", "D:/esp/v6.0.2/esp-idf/components/esp_ringbuf", "D:/esp/v6.0.2/esp-idf/components/esp_rom", "D:/esp/v6.0.2/esp-idf/components/esp_security", "D:/esp/v6.0.2/esp-idf/components/esp_stdio", "D:/esp/v6.0.2/esp-idf/components/esp_system", "D:/esp/v6.0.2/esp-idf/components/esp_timer", "D:/esp/v6.0.2/esp-idf/components/esp_usb_cdc_rom_console", "D:/esp/v6.0.2/esp-idf/components/esp_wifi", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__ds18b20", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zboss-lib", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zigbee-lib", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus", "D:/esp/v6.0.2/esp-idf/components/esptool_py", "D:/esp/v6.0.2/esp-idf/examples/zigbee/zb_common_components/examples_utils", "D:/esp/v6.0.2/esp-idf/components/freertos", "D:/esp/v6.0.2/esp-idf/components/hal", "D:/esp/v6.0.2/esp-idf/components/heap", "D:/esp/v6.0.2/esp-idf/components/ieee802154", "D:/esp/v6.0.2/esp-idf/components/log", "D:/esp/v6.0.2/esp-idf/components/lwip", "D:/Zigbee_SmartHome/HA_on_off_switch/main", "D:/esp/v6.0.2/esp-idf/components/mbedtls", "D:/esp/v6.0.2/esp-idf/components/nvs_flash", "D:/esp/v6.0.2/esp-idf/components/nvs_sec_provider", "D:/esp/v6.0.2/esp-idf/components/openthread", "D:/esp/v6.0.2/esp-idf/components/partition_table", "D:/esp/v6.0.2/esp-idf/components/pthread", "D:/esp/v6.0.2/esp-idf/components/riscv", "D:/esp/v6.0.2/esp-idf/components/soc", "D:/esp/v6.0.2/esp-idf/components/spi_flash", "D:/esp/v6.0.2/esp-idf/components/vfs", "D:/esp/v6.0.2/esp-idf/components/wpa_supplicant", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -208,6 +208,21 @@
             "sources": [ "D:/esp/v6.0.2/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_driver_bitscrambler": {
+            "alias": "idf::esp_driver_bitscrambler",
+            "target": "___idf_esp_driver_bitscrambler",
+            "prefix": "idf",
+            "dir": "D:/esp/v6.0.2/esp-idf/components/esp_driver_bitscrambler",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_driver_bitscrambler",
+            "reqs": [ "esp_hal_dma" ],
+            "priv_reqs": [ "esp_mm", "esp_driver_dma" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": [ "include" ]
+        },
         "esp_driver_dma": {
             "alias": "idf::esp_driver_dma",
             "target": "___idf_esp_driver_dma",
@@ -236,6 +251,21 @@
             "managed_priv_reqs": [],
             "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
             "sources": [ "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/rtc_io.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/dedic_gpio.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio_pin_glitch_filter.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio_flex_glitch_filter.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio_etm.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_rmt": {
+            "alias": "idf::esp_driver_rmt",
+            "target": "___idf_esp_driver_rmt",
+            "prefix": "idf",
+            "dir": "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_rmt",
+            "reqs": [ "esp_hal_rmt" ],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_bitscrambler", "esp_mm", "esp_driver_dma" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
+            "sources": [ "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_common.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_encoder.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_encoder_bytes.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_encoder_copy.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_encoder_simple.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_rx.c", "D:/esp/v6.0.2/esp-idf/components/esp_driver_rmt/src/rmt_tx.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_spi": {
@@ -446,6 +476,21 @@
             "managed_priv_reqs": [],
             "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_pmu/libesp_hal_pmu.a",
             "sources": [ "D:/esp/v6.0.2/esp-idf/components/esp_hal_pmu/esp32c6/pmu_hal.c", "D:/esp/v6.0.2/esp-idf/components/esp_hal_pmu/esp32c6/pau_hal.c", "D:/esp/v6.0.2/esp-idf/components/esp_hal_pmu/brownout_hal.c" ],
+            "include_dirs": [ "include", "esp32c6/include" ]
+        },
+        "esp_hal_rmt": {
+            "alias": "idf::esp_hal_rmt",
+            "target": "___idf_esp_hal_rmt",
+            "prefix": "idf",
+            "dir": "D:/esp/v6.0.2/esp-idf/components/esp_hal_rmt",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_hal_rmt",
+            "reqs": [ "soc", "hal" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/esp_hal_rmt/libesp_hal_rmt.a",
+            "sources": [ "D:/esp/v6.0.2/esp-idf/components/esp_hal_rmt/rmt_hal.c", "D:/esp/v6.0.2/esp-idf/components/esp_hal_rmt/esp32c6/rmt_periph.c" ],
             "include_dirs": [ "include", "esp32c6/include" ]
         },
         "esp_hal_rtc_timer": {
@@ -823,6 +868,21 @@
             "sources": [ "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/lib_printf.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/mesh_event.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/smartconfig.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/wifi_init.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/wifi_default.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/wifi_netif.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/esp32c6/esp_adapter.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/regulatory/esp_wifi_regulatory.c", "D:/esp/v6.0.2/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
             "include_dirs": [ "include", "include/local", "wifi_apps/include", "wifi_apps/nan_app/include" ]
         },
+        "espressif__ds18b20": {
+            "alias": "idf::espressif__ds18b20",
+            "target": "___idf_espressif__ds18b20",
+            "prefix": "idf",
+            "dir": "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__ds18b20",
+            "type": "LIBRARY",
+            "lib": "__idf_espressif__ds18b20",
+            "reqs": [],
+            "priv_reqs": [ "espressif__onewire_bus" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__onewire_bus" ],
+            "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__ds18b20/libespressif__ds18b20.a",
+            "sources": [ "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__ds18b20/src/ds18b20.c" ],
+            "include_dirs": [ "include" ]
+        },
         "espressif__esp-zboss-lib": {
             "alias": "idf::espressif__esp-zboss-lib",
             "target": "___idf_espressif__esp-zboss-lib",
@@ -852,6 +912,21 @@
             "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__esp-zigbee-lib/libespressif__esp-zigbee-lib.a",
             "sources": [ "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__esp-zigbee-lib/src/compat/esp_log.c" ],
             "include_dirs": [ "include" ]
+        },
+        "espressif__onewire_bus": {
+            "alias": "idf::espressif__onewire_bus",
+            "target": "___idf_espressif__onewire_bus",
+            "prefix": "idf",
+            "dir": "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus",
+            "type": "LIBRARY",
+            "lib": "__idf_espressif__onewire_bus",
+            "reqs": [],
+            "priv_reqs": [ "esp_driver_rmt", "esp_driver_uart", "esp_driver_gpio" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/espressif__onewire_bus/libespressif__onewire_bus.a",
+            "sources": [ "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus/src/onewire_bus_api.c", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus/src/onewire_crc.c", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus/src/onewire_device.c", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus/src/onewire_bus_impl_rmt.c", "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus/src/onewire_bus_impl_uart.c" ],
+            "include_dirs": [ "include", "interface" ]
         },
         "esptool_py": {
             "alias": "idf::esptool_py",
@@ -981,9 +1056,9 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "esp_driver_uart", "ieee802154", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
+            "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "esp_driver_uart", "ieee802154", "espressif__ds18b20", "espressif__onewire_bus", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
+            "managed_priv_reqs": [ "espressif__ds18b20", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
             "file": "D:/Zigbee_SmartHome/HA_on_off_switch/build/esp-idf/main/libmain.a",
             "sources": [ "D:/Zigbee_SmartHome/HA_on_off_switch/main/esp_zb_switch.c", "D:/Zigbee_SmartHome/HA_on_off_switch/main/switch_driver.c" ],
             "include_dirs": [ "." ]
@@ -2970,10 +3045,23 @@
             "source": "project_components",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "esp_driver_uart", "ieee802154", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
+            "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "esp_driver_uart", "ieee802154", "espressif__ds18b20", "espressif__onewire_bus", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
+            "managed_priv_reqs": [ "espressif__ds18b20", "espressif__esp-zboss-lib", "espressif__esp-zigbee-lib", "examples_utils" ],
             "include_dirs": [ "." ]
+        },
+        "espressif__ds18b20": {
+            "alias": "idf::espressif__ds18b20",
+            "target": "___idf_espressif__ds18b20",
+            "prefix": "idf",
+            "dir": "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__ds18b20",
+            "source": "project_managed_components",
+            "lib": "__idf_espressif__ds18b20",
+            "reqs": [],
+            "priv_reqs": [ "espressif__onewire_bus" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__onewire_bus" ],
+            "include_dirs": [ "include" ]
         },
         "espressif__esp-zboss-lib": {
             "alias": "idf::espressif__esp-zboss-lib",
@@ -3000,6 +3088,19 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
+        },
+        "espressif__onewire_bus": {
+            "alias": "idf::espressif__onewire_bus",
+            "target": "___idf_espressif__onewire_bus",
+            "prefix": "idf",
+            "dir": "D:/Zigbee_SmartHome/HA_on_off_switch/managed_components/espressif__onewire_bus",
+            "source": "project_managed_components",
+            "lib": "__idf_espressif__onewire_bus",
+            "reqs": [],
+            "priv_reqs": [ "esp_driver_rmt", "esp_driver_uart", "esp_driver_gpio" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include", "interface" ]
         },
         "examples_utils": {
             "alias": "idf::examples_utils",

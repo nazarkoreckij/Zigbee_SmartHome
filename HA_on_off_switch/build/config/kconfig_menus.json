@@ -6602,6 +6602,24 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "Add sensor hub component and link the implementation layer.\nNOTE: Only a single DS18B20 device is supported.",
+                "id": "DS18B20_SENSOR_HUB",
+                "name": "DS18B20_SENSOR_HUB",
+                "range": null,
+                "title": "Enable sensor hub integration",
+                "type": "bool"
+            }
+        ],
+        "depends_on": null,
+        "id": "ds18b20-configuration-D:-Zigbee_SmartHome-HA_on_off_switch-managed_components-espressif__ds18b20-Kconfig.projbuild-1",
+        "title": "DS18B20 Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],
@@ -7583,6 +7601,34 @@
                 "children": [
                     {
                         "children": [],
+                        "depends_on": "SOC_BITSCRAMBLER_SUPPORTED",
+                        "help": "Place BitScrambler control functions into IRAM for better performance and fewer cache misses.",
+                        "id": "BITSCRAMBLER_CTRL_FUNC_IN_IRAM",
+                        "name": "BITSCRAMBLER_CTRL_FUNC_IN_IRAM",
+                        "range": null,
+                        "title": "Place BitScrambler control functions in IRAM",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_BITSCRAMBLER_SUPPORTED",
+                        "help": "This will ensure the BitScrambler object will not be allocated from a memory region\nwhere its cache can be disabled.",
+                        "id": "BITSCRAMBLER_OBJ_CACHE_SAFE",
+                        "name": "BITSCRAMBLER_OBJ_CACHE_SAFE",
+                        "range": null,
+                        "title": null,
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": "SOC_BITSCRAMBLER_SUPPORTED",
+                "id": "component-config-esp-driver-bitscrambler-configurations-D:-esp-v6.0.2-esp-idf-components-esp_driver_bitscrambler-Kconfig-1",
+                "title": "ESP-Driver:BitScrambler Configurations",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
                         "depends_on": "SOC_GDMA_SUPPORTED",
                         "help": "Place GDMA control functions (like start/stop/append/reset) into IRAM,\nso that these functions can be IRAM-safe and able to be called in the other IRAM interrupt context.",
                         "id": "GDMA_CTRL_FUNC_IN_IRAM",
@@ -7749,6 +7795,104 @@
                 "depends_on": null,
                 "id": "component-config-esp-driver-gpio-configurations-D:-esp-v6.0.2-esp-idf-components-esp_driver_gpio-Kconfig-1",
                 "title": "ESP-Driver:GPIO Configurations",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Place RMT encoder function into IRAM for better performance and fewer cache misses.",
+                        "id": "RMT_ENCODER_FUNC_IN_IRAM",
+                        "name": "RMT_ENCODER_FUNC_IN_IRAM",
+                        "range": null,
+                        "title": "Place RMT encoder function in IRAM",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Place RMT TX ISR handler in IRAM to reduce latency caused by cache miss.",
+                        "id": "RMT_TX_ISR_HANDLER_IN_IRAM",
+                        "name": "RMT_TX_ISR_HANDLER_IN_IRAM",
+                        "range": null,
+                        "title": "Place RMT TX ISR handler in IRAM to reduce latency",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Place RMT RX ISR handler in IRAM to reduce latency caused by cache miss.",
+                        "id": "RMT_RX_ISR_HANDLER_IN_IRAM",
+                        "name": "RMT_RX_ISR_HANDLER_IN_IRAM",
+                        "range": null,
+                        "title": "Place RMT RX ISR handler in IRAM to reduce latency",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Place RMT receive function into IRAM for better performance and fewer cache misses.",
+                        "id": "RMT_RECV_FUNC_IN_IRAM",
+                        "name": "RMT_RECV_FUNC_IN_IRAM",
+                        "range": null,
+                        "title": "Place RMT receive function in IRAM",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Enable this option to allow the RMT TX Interrupt Service Routine (ISR)\nto execute even when the cache is disabled. This can be useful in scenarios where the cache\nmight be turned off, but the RMT TX functionality is still required to operate correctly.",
+                        "id": "RMT_TX_ISR_CACHE_SAFE",
+                        "name": "RMT_TX_ISR_CACHE_SAFE",
+                        "range": null,
+                        "title": "Allow RMT TX ISR to execute when cache is disabled",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Enable this option to allow the RMT RX Interrupt Service Routine (ISR)\nto execute even when the cache is disabled. This can be useful in scenarios where the cache\nmight be turned off, but the RMT RX functionality is still required to operate correctly.",
+                        "id": "RMT_RX_ISR_CACHE_SAFE",
+                        "name": "RMT_RX_ISR_CACHE_SAFE",
+                        "range": null,
+                        "title": "Allow RMT RX ISR to execute when cache is disabled",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "This will ensure the RMT object will not be allocated from a memory region\nwhere its cache can be disabled.",
+                        "id": "RMT_OBJ_CACHE_SAFE",
+                        "name": "RMT_OBJ_CACHE_SAFE",
+                        "range": null,
+                        "title": null,
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "If enabled, RMT driver component will:\n1. ignore the global logging settings\n2. compile all log messages into the binary\n3. set the runtime log level to VERBOSE\nPlease enable this option by caution, as it will increase the binary size.",
+                        "id": "RMT_ENABLE_DEBUG_LOG",
+                        "name": "RMT_ENABLE_DEBUG_LOG",
+                        "range": null,
+                        "title": "Force enable debug log",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SOC_RMT_SUPPORTED",
+                        "help": "Ensure the RMT interrupt is IRAM-Safe by allowing the interrupt handler to be\nexecutable when the cache is disabled (e.g. SPI Flash write).",
+                        "id": "RMT_ISR_IRAM_SAFE",
+                        "name": "RMT_ISR_IRAM_SAFE",
+                        "range": null,
+                        "title": "RMT ISR IRAM-Safe (Deprecated)",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": "SOC_RMT_SUPPORTED",
+                "id": "component-config-esp-driver-rmt-configurations-D:-esp-v6.0.2-esp-idf-components-esp_driver_rmt-Kconfig-1",
+                "title": "ESP-Driver:RMT Configurations",
                 "type": "menu"
             },
             {

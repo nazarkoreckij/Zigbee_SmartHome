@@ -122,6 +122,13 @@ $<TARGET_FILE:idf::esp_phy>
 $<TARGET_FILE:idf::esp_hal_ieee802154>
 $<TARGET_FILE:idf::ieee802154>
 $<TARGET_FILE:__idf_esp_hal_ieee802154>
+$<TARGET_FILE:idf::esp_hal_rmt>
+$<TARGET_FILE:idf::esp_driver_rmt>
+$<TARGET_FILE:__idf_esp_hal_rmt>
+$<TARGET_FILE:idf::espressif__onewire_bus>
+$<TARGET_FILE:__idf_esp_driver_rmt>
+$<TARGET_FILE:idf::espressif__ds18b20>
+$<TARGET_FILE:__idf_espressif__onewire_bus>
 $<TARGET_FILE:zboss_stack_lib>
 $<TARGET_FILE:idf::esp_hal_i2c>
 $<TARGET_FILE:idf::esp_hal_twai>
@@ -137,4 +144,5 @@ $<TARGET_FILE:__idf_ieee802154>
 $<TARGET_FILE:idf::examples_utils>
 $<TARGET_FILE:__idf_espressif__esp-zigbee-lib>
 $<TARGET_FILE:idf::main>
+$<TARGET_FILE:__idf_espressif__ds18b20>
 $<TARGET_FILE:__idf_examples_utils>

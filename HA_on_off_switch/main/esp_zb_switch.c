@@ -8,6 +8,8 @@
 #include "ha/esp_zigbee_ha_standard.h"
 #include "zcl_utility.h"
 #include "esp_zb_switch.h"
+#include "onewire_bus.h"
+#include "ds18b20.h"
 
 static switch_func_pair_t button_func_pair[] = {
     {GPIO_INPUT_IO_TOGGLE_SWITCH, SWITCH_ONOFF_TOGGLE_CONTROL}
@@ -119,6 +121,53 @@ static void esp_zb_task(void *pvParameters)
     ESP_ERROR_CHECK(esp_zb_start(false));
     esp_zb_stack_main_loop();
 }
+#define TEMP_SENSOR_GPIO 9
+
+void read_temp_task(void *pvParameters) {
+    onewire_bus_handle_t bus = NULL;
+    onewire_bus_config_t bus_config = {
+        .bus_gpio_num = TEMP_SENSOR_GPIO,
+    };
+    onewire_bus_rmt_config_t rmt_config = {
+        .max_rx_bytes = 10, // 10 bytes for 1-wire rx buffer
+    };
+    onewire_new_bus_rmt(&bus_config, &rmt_config, &bus);
+
+    onewire_device_iter_handle_t iter = NULL;
+    onewire_device_t next_onewire_device;
+    bool ds18b20_found = false;
+
+    // Пошук пристроїв на шині
+    onewire_new_device_iter(bus, &iter);
+    while (onewire_device_iter_get_next(iter, &next_onewire_device) == ESP_OK) {
+        if (next_onewire_device.address == 0x28) { // Код сімейства DS18B20
+            ds18b20_found = true;
+            break;
+        }
+    }
+    onewire_del_device_iter(iter);
+
+    if (!ds18b20_found) {
+        printf("--- Датчик DS18B20 НЕ ЗНАЙДЕНО! Перевір контакти. ---\n");
+        vTaskDelete(NULL);
+    }
+
+    // Ініціалізація знайденого датчика
+    ds18b20_device_handle_t ds18b20s = NULL;
+    ds18b20_config_t ds_cfg = {};
+    ds18b20_new_device_from_enumeration(&next_onewire_device, &ds_cfg, &ds18b20s);
+    ds18b20_set_resolution(ds18b20s, DS18B20_RESOLUTION_12B);
+
+    // Безкінечний цикл зчитування
+    while (1) {
+        float temperature;
+        ds18b20_trigger_temperature_conversion(ds18b20s);
+        vTaskDelay(pdMS_TO_TICKS(800)); // Чекаємо, поки датчик зміряє температуру
+        ds18b20_get_temperature(ds18b20s, &temperature);
+        printf("\n>>> Поточна температура: %.2f °C <<<\n\n", temperature);
+        vTaskDelay(pdMS_TO_TICKS(5000)); // Пауза 5 секунд перед наступним виміром
+    }
+}
 
 void app_main(void)
 {
@@ -130,4 +179,5 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_zb_platform_config(&config));
 
     xTaskCreate(esp_zb_task, "Zigbee_main", 4096, NULL, 5, NULL);
+    xTaskCreate(&read_temp_task, "read_temp_task", 4096, NULL, 5, NULL);
 }
